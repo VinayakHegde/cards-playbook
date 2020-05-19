@@ -1,5 +1,5 @@
 import VueRouter from "vue-router";
-import { mount, createLocalVue  } from "@vue/test-utils";
+import { mount, createLocalVue } from "@vue/test-utils";
 import Layout from "../Layout.vue";
 import routes from "../../router/routes";
 
