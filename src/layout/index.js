@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Component from "vue-class-component";
-import Header from "@/components/Header.vue";
+import Header from "@/components/header/Header.vue";
 
 @Component({
   components: {
