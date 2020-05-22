@@ -7,6 +7,7 @@ export const arrange = (list, element) => {
 };
 
 export default (list, element, comparer, strength) => {
-  if (!list || !list.length || !element || !comparer || isNaN(strength)) return -1;
+  if (!list || !list.length || !element || !comparer || isNaN(strength))
+    return -1;
   return arrange(list, element).findIndex(r => r === comparer) * strength;
 };

@@ -1,8 +1,6 @@
 import strengthOf, { arrange } from "../strength-of";
 
 describe("strengthOf", () => {
-  let card = "7D";
-  let rotation = "7D";
   it("should return empty -1", () => {
     expect(strengthOf()).toBe(-1);
     expect(strengthOf([])).toBe(-1);
