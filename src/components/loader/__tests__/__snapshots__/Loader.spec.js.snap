@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader.vue match the snapshot 1`] = `
+<div class="overlay">
+  <div class="loader"></div>
+</div>
+`;
