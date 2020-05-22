@@ -1,0 +1,93 @@
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  input {
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 6px rgba(gainsboro, .3);
+    box-sizing: border-box;
+    font-size: 0.8em;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: default;
+
+    &::placeholder {
+      text-transform: none;
+      font-family: sans-serif;
+    }
+  }
+  fieldset {
+    display: flex;
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+    legend {
+      font-family: sans-serif;
+    }
+  }
+
+  button {
+    color: yellow;
+    background: darkblue;
+    font-weight: 600;
+    border: 0;
+    border-radius: 0.75em;
+    font-size: 1.5em;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    fieldset {
+      flex: 0 0 calc(20% - 10px);
+      margin: 0 0 1.5em;
+
+      legend {
+        color: gray;
+        display: block;
+        font-size: 0.6em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+        text-transform: uppercase;
+      }
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .single-field {
+    padding: 50px;
+    width: 60%;
+    flex: 1;
+    align-items: flex-start;
+    display: flex;
+
+    label {
+      box-sizing: border-box;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: right;
+      width: 33%;
+    }
+
+    input {
+      margin-left: 5px;
+      width: 33%;
+    }
+    
+  }
+}

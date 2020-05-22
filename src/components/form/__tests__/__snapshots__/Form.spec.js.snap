@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form.vue match the snapshot 1`] = `
+<form autocomplete="off" class="form">
+  <div class="fields">
+    <fieldset class="field">
+      <legend>Card 1</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 2</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 3</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 4</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 5</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 6</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 7</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 8</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 9</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+    <fieldset class="field">
+      <legend>Card 10</legend> <input placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off">
+    </fieldset>
+  </div>
+  <div class="single-field"><label for="field-rotation">Rotation Card</label> <input id="field-rotation" placeholder="Enter card" minlength="2" maxlength="3" autocomplete="off"></div> <button type="submit">Submit</button>
+</form>
+`;
