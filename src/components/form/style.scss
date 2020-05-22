@@ -1,20 +1,20 @@
 
 .form {
+  flex: 1;
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex: 1;
 
   input {
-    border: 1px solid gainsboro;
-    box-shadow: 0 0 6px rgba(gainsboro, .3);
-    box-sizing: border-box;
     font-size: 0.8em;
     padding: 0.5em 0.7em;
     border-radius: 5px;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 6px rgba(gainsboro, .3);
+    box-sizing: border-box;
+    cursor: default;
     text-transform: uppercase;
     font-family: sans-serif;
-    cursor: default;
 
     &::placeholder {
       text-transform: none;
@@ -22,10 +22,10 @@
     }
   }
   fieldset {
-    display: flex;
-    border: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    border: none;
     
     legend {
       font-family: sans-serif;
@@ -33,14 +33,14 @@
   }
 
   button {
-    color: yellow;
-    background: darkblue;
     font-weight: 600;
+    font-size: 1.5em;
     border: 0;
     border-radius: 0.75em;
-    font-size: 1.5em;
     padding: 0.5em 2em;
     cursor: pointer;
+    color: yellow;
+    background: darkblue;
     &:active,
     &:focus {
       outline: none;
@@ -55,16 +55,16 @@
       margin: 0 0 1.5em;
 
       legend {
-        color: gray;
-        display: block;
-        font-size: 0.6em;
-        font-weight: bold;
         margin-bottom: 0.3em;
+        font-size: 0.6em;
+        color: gray;
         text-transform: uppercase;
+        font-weight: bold;
+        display: block;
       }
       input {
-        display: block;
         width: 100%;
+        display: block;
       }
     }
   }
@@ -77,17 +77,16 @@
     display: flex;
 
     label {
-      box-sizing: border-box;
       font-size: 1.5em;
       font-weight: 600;
-      text-align: right;
       width: 33%;
+      box-sizing: border-box;
+      text-align: right;
     }
 
     input {
       margin-left: 5px;
       width: 33%;
     }
-    
   }
 }
