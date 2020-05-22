@@ -1,5 +1,14 @@
 # cards-playbook
 
+## Demo
+
+[solution link: https://vinayakhegde.github.io/cards-playbook/](https://vinayakhegde.github.io/cards-playbook/)
+
+## Clone
+```
+git clone  https://github.com/VinayakHegde/cards-playbook.git
+```
+
 ## Project setup
 ```
 npm install
@@ -24,6 +33,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
