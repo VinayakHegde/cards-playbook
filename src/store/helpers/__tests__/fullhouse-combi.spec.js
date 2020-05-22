@@ -1,4 +1,8 @@
-import possibleCombi, { getFullHouseCombo, combi, hasConditionMet } from "../fullhouse-combi";
+import possibleCombi, {
+  getFullHouseCombo,
+  combi,
+  hasConditionMet
+} from "../fullhouse-combi";
 
 describe("fullhouse-combi", () => {
   const params = {
@@ -109,7 +113,7 @@ describe("combi", () => {
 });
 
 describe("hhasConditionMet", () => {
-  it("should return true  or false based on condition", () =>{
+  it("should return true  or false based on condition", () => {
     expect(hasConditionMet()).toBe(false);
     expect(hasConditionMet([])).toBe(false);
     expect(hasConditionMet({})).toBe(false);

@@ -6,7 +6,7 @@ export const hasConditionMet = reduced => {
   if (!reduced || reduced.length !== 2 || !reduced.sort) return false;
   const sorted = reduced.sort();
   return sorted.length === 2 && sorted[0] === 2 && sorted[1] === 3;
-}
+};
 
 export const combi = (list, length) => {
   if (length > list.length || length <= 0) return [];
@@ -48,8 +48,12 @@ export const getFullHouseCombo = cards => {
 
 export default ({ cards, rotation }) => {
   if (!cards) return [];
-  return getFullHouseCombo(cards).map(cards => {
-    const sortedCombi = sort({ cards, rotation, reverse: true });
+  return getFullHouseCombo(cards).map(fullHouseCards => {
+    const sortedCombi = sort({
+      cards: fullHouseCards,
+      rotation,
+      reverse: true
+    });
     return sortedCombi.map(z => {
       return `${z.value}${z.name
         .split("")
