@@ -18,3 +18,4 @@ export const Values = [
   "4",
   "3"
 ];
+export const FULLHOUSE_LENGTH = 5;

@@ -1,4 +1,4 @@
-import possibleCombi, { fullHandCombinations, combi } from "../fullhouse-combi";
+import possibleCombi, { getFullHouseCombo, combi, hasConditionMet } from "../fullhouse-combi";
 
 describe("fullhouse-combi", () => {
   const params = {
@@ -34,18 +34,18 @@ describe("fullhouse-combi", () => {
   });
 });
 
-describe("fullHandCombinations", () => {
+describe("getFullHouseCombo", () => {
   let cards = [];
   it("should return empty list", () => {
-    expect(fullHandCombinations(cards)).toEqual([]);
+    expect(getFullHouseCombo(cards)).toEqual([]);
   });
   it("should  return empty list when no condition met", () => {
     cards = ["2H", "2D", "3D", "3C"];
-    expect(fullHandCombinations(cards)).toEqual([]);
+    expect(getFullHouseCombo(cards)).toEqual([]);
   });
   it("should return all possible combinations", () => {
     cards = ["2H", "2D", "2C", "2S", "3H", "3D", "3C"];
-    expect(fullHandCombinations(cards)).toEqual([
+    expect(getFullHouseCombo(cards)).toEqual([
       ["2H", "2D", "2C", "3H", "3D"],
       ["2H", "2D", "2C", "3H", "3C"],
       ["2H", "2D", "2C", "3D", "3C"],
@@ -68,7 +68,7 @@ describe("fullHandCombinations", () => {
   });
   it("should  return empty list when no condition met", () => {
     cards = ["2H", "2D", "3D", "3C"];
-    expect(fullHandCombinations(cards)).toEqual([]);
+    expect(getFullHouseCombo(cards)).toEqual([]);
   });
 });
 
@@ -105,5 +105,21 @@ describe("combi", () => {
       ["2D", "2S", "3H", "3D", "3C"],
       ["2C", "2S", "3H", "3D", "3C"]
     ]);
+  });
+});
+
+describe("hhasConditionMet", () => {
+  it("should return true  or false based on condition", () =>{
+    expect(hasConditionMet()).toBe(false);
+    expect(hasConditionMet([])).toBe(false);
+    expect(hasConditionMet({})).toBe(false);
+    expect(hasConditionMet("")).toBe(false);
+    expect(hasConditionMet("X")).toBe(false);
+    expect(hasConditionMet([1])).toBe(false);
+    expect(hasConditionMet([1, 2])).toBe(false);
+    expect(hasConditionMet([4, 2])).toBe(false);
+    expect(hasConditionMet([2, 3])).toBe(true);
+    expect(hasConditionMet([3, 2])).toBe(true);
+    expect(hasConditionMet([2, 3, 3])).toBe(false);
   });
 });
