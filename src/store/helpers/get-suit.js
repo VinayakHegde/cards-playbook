@@ -1,4 +1,4 @@
-export default (card = "") =>
+const getSuit = (card = "") =>
   !card
     ? ""
     : {
@@ -12,3 +12,15 @@ export default (card = "") =>
           .pop()
           .toUpperCase()
       ];
+export default getSuit;
+
+export const getSuitInitial = card => {
+  if (!card) return null;
+  const suit = getSuit(card);
+
+  if (!suit) return null;
+  return suit.name
+    .split("")
+    .shift()
+    .toUpperCase();
+};

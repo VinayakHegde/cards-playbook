@@ -1,4 +1,4 @@
-import getSuit from "./get-suit";
+import getSuit, { getSuitInitial } from "./get-suit";
 import getValue from "./get-value";
 import isValid from "./is-valid";
 import { Suits, Values, Strength } from "./constants";
@@ -14,16 +14,10 @@ export const arrange = (list, element) => {
 export const getOrder = (card, rotation = "", reverse = false) => {
   if (!card || !rotation) return -1;
   if (!isValid([card], rotation)) return -1;
-  const rSuit = getSuit(rotation)
-    .name.split("")
-    .shift()
-    .toUpperCase();
+  const rSuit = getSuitInitial(rotation);
   const rValue = getValue(rotation);
 
-  const cSuit = getSuit(card)
-    .name.split("")
-    .shift()
-    .toUpperCase();
+  const cSuit = getSuitInitial(card);
   const cValue = getValue(card);
   const a =
     arrange(Values, rValue).findIndex(r => r === cValue) *
