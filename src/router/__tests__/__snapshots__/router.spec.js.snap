@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`router should match the snapshot 1`] = `
+VueRouter {
+  "afterHooks": Array [],
+  "app": null,
+  "apps": Array [],
+  "beforeHooks": Array [],
+  "fallback": false,
+  "history": HTML5History {
+    "base": "",
+    "current": Object {
+      "fullPath": "/",
+      "hash": "",
+      "matched": Array [],
+      "meta": Object {},
+      "name": null,
+      "params": Object {},
+      "path": "/",
+      "query": Object {},
+    },
+    "errorCbs": Array [],
+    "pending": null,
+    "ready": false,
+    "readyCbs": Array [],
+    "readyErrorCbs": Array [],
+    "router": [Circular],
+  },
+  "matcher": Object {
+    "addRoutes": [Function],
+    "match": [Function],
+  },
+  "mode": "history",
+  "options": Object {
+    "base": undefined,
+    "mode": "history",
+    "routes": Array [
+      Object {
+        "path": "/",
+        "redirect": Object {
+          "name": "Home",
+        },
+      },
+      Object {
+        "path": "/deck/",
+        "redirect": Object {
+          "name": "Home",
+        },
+      },
+      Object {
+        "component": [Function],
+        "meta": Object {
+          "header": "CARDS",
+        },
+        "name": "Home",
+        "path": "/deck/new",
+      },
+      Object {
+        "component": [Function],
+        "meta": Object {
+          "header": "Ordered Pile",
+        },
+        "name": "Pack",
+        "path": "/deck/:hash",
+        "props": true,
+      },
+      Object {
+        "component": [Function],
+        "meta": Object {
+          "header": "404 | Page not found",
+        },
+        "name": "Error",
+        "path": "/error",
+        "props": true,
+      },
+      Object {
+        "path": "*",
+        "redirect": Object {
+          "name": "Error",
+        },
+      },
+    ],
+  },
+  "resolveHooks": Array [],
+}
+`;
