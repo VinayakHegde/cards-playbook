@@ -1,0 +1,17 @@
+
+.table-analysis {
+  padding: 5px 10%;
+  font-family: sans-serif;
+  h2 {
+    font-size: 2em;
+  }
+  .value {
+    font-weight: normal;
+  }
+  &__fullhouse {
+    &__combis {
+      margin: 0;
+      list-style-type: lower-roman;
+    }
+  }
+}
