@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Route.vue match the snapshot 1`] = `<main><a href="#/" aria-current="page" class="router-link-exact-active router-link-active">Back Home</a></main>`;
