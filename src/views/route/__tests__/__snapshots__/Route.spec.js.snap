@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout.vue match the snapshot 1`] = `
+exports[`Route.vue match the snapshot 1`] = `
 <div id="cards-playbook">
+  <!---->
   <header></header>
   <!---->
 </div>

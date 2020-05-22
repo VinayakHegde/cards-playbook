@@ -1,16 +1,21 @@
+import Vuex from "vuex";
 import VueRouter from "vue-router";
 import { mount, createLocalVue } from "@vue/test-utils";
-import Layout from "../Layout.vue";
-import routes from "../../router/routes";
+import storeConfig from "@/store/store-config";
+import routes from "@/router/routes";
+import Route from "../Route.vue";
 
 const localVue = createLocalVue();
 localVue.use(VueRouter);
-describe("Layout.vue", () => {
+localVue.use(Vuex);
+describe("Route.vue", () => {
   it("match the snapshot", () => {
     const router = new VueRouter({ routes });
-    const wrapper = mount(Layout, {
+    const store = new Vuex.Store(storeConfig);
+    const wrapper = mount(Route, {
       localVue,
-      router
+      router,
+      store
     });
     expect(wrapper).toMatchSnapshot();
   });

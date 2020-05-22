@@ -1,0 +1,24 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden auto;
+  background-color: #E1F2F6;
+}
+
+#cards-playbook {
+  color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  main {
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+}
