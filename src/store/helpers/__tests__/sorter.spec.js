@@ -1,4 +1,4 @@
-import sort, { getOrder, arrange } from "../sorter";
+import sort, { getOrder } from "../sorter";
 
 describe("sort", () => {
   const params = {
@@ -53,17 +53,5 @@ describe("getOrder", () => {
   });
   it("should return the cards in sorted order", () => {
     expect(cards.map(card => getOrder(card, rotation))).toEqual(orders);
-  });
-});
-describe("arrange", () => {
-  const cards = ["7D", "AS", "QH", "9S", "6D"];
-  it("should return empty list", () => {
-    expect(arrange()).toEqual([]);
-    expect(arrange([])).toEqual([]);
-  });
-  it("should return the rearranged list", () => {
-    expect(arrange(cards)).toEqual(["6D", "7D", "AS", "QH", "9S"]);
-    expect(arrange(cards, "X")).toEqual(["6D", "7D", "AS", "QH", "9S"]);
-    expect(arrange(cards, "QH")).toEqual(["QH", "9S", "6D", "7D", "AS"]);
   });
 });
